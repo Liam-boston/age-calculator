@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/firstNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="text"
+        android:hint="First name"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="text"
+        android:hint="Last name"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/birthDateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="date"
+        android:maxLength="10"
+        android:hint="Date of birth"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <TextView
+        android:id="@+id/dateFormat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yyyy-MM-dd"
+        android:textAlignment="center"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/calculateAgeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Calculate age" />
+
+</LinearLayout>
